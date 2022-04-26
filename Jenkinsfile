@@ -2,7 +2,7 @@ pipeline {
     agent any
       tools {
           maven 'M2_HOME'
-          jdk 'JAVA_HOME'
+        //  jdk 'JAVA_HOME'
         }
     environment {
         DOCKER_IMAGE_NAME = "sandrarome/first-app:v1"

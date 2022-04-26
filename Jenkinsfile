@@ -1,5 +1,9 @@
 pipeline {
     agent any
+      tools {
+          maven 'MAVEN_HOME'
+          jdk 'JAVA_HOME'
+        }
     environment {
         DOCKER_IMAGE_NAME = "sandrarome/first-app:v1"
         DOCKER_USERNAME = "sandrarome"
